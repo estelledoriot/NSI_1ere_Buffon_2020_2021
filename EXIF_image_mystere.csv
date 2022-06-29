@@ -1,0 +1,50 @@
+balise EXIF,valeur
+GPSInfo,{'GPSVersionID': b'\x02\x02\x00\x00', 'GPSLatitudeRef': 'N', 'GPSLatitude': (48.0, 50.4225, 0.0), 'GPSLongitudeRef': 'E', 'GPSLongitude': (2.0, 18.899, 0.0), 'GPSAltitude': 55.2454}
+ResolutionUnit,2
+ExifOffset,228
+Make,NIKON CORPORATION
+Model,NIKON D7200
+Software,Adobe Photoshop Lightroom 6.8 (Windows)
+DateTime,2017:02:06 03:10:48
+XResolution,300.0
+YResolution,300.0
+ExifVersion,b'0230'
+ShutterSpeedValue,8.965784
+ApertureValue,3.851999
+DateTimeOriginal,2015:11:30 16:26:55
+DateTimeDigitized,2015:11:30 16:26:55
+ExposureBiasValue,-0.3333333333333333
+MaxApertureValue,3.8
+MeteringMode,2
+LightSource,0
+Flash,16
+FocalLength,22.0
+ColorSpace,1
+WhiteBalance,0
+DigitalZoomRatio,1.0
+FocalPlaneXResolution,2558.6412048339844
+FocalPlaneYResolution,2558.6412048339844
+FocalPlaneResolutionUnit,3
+SubsecTimeOriginal,65
+SubsecTimeDigitized,65
+Sharpness,0
+SubjectDistanceRange,0
+SensingMethod,2
+FileSource,b'\x03'
+ExposureTime,0.002
+FNumber,3.8
+SceneType,b'\x01'
+ExposureProgram,4
+CFAPattern,b'\x02\x00\x02\x00\x00\x01\x01\x02'
+CustomRendered,0
+ISOSpeedRatings,1250
+ExposureMode,0
+SensitivityType,2
+BodySerialNumber,4325319
+LensSpecification,(18.0, 105.0, 3.5, 5.6)
+LensModel,18.0-105.0 mm f/3.5-5.6
+FocalLengthIn35mmFilm,33
+SceneCaptureType,0
+GainControl,2
+Contrast,0
+Saturation,0
