@@ -1,0 +1,13 @@
+[project]
+name = "nsi-1ere-buffon"
+version = "0.1.0"
+description = "Cours et TD de NSI en 1ère au lycée Buffon (année 2020-2021)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "pillow>=11.3.0",
+    "pygame>=2.6.1",
+    "pylint>=3.3.8",
+]

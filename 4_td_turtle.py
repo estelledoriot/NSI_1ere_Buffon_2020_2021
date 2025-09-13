@@ -1,30 +1,35 @@
-#**********************************
+# **********************************
 # * NSI 1ère Lycée Buffon 2020-2021
 # * Estelle Doriot
 # *
 # * TD Turtle
-#**********************************
+# **********************************
 
 from turtle import *
 
 forward(100)
 
 # Exercice 1 - 2)
-#****************
+# ****************
+
 
 def carre(c):
     for i in range(4):
         forward(c)
         right(90)
 
-#carre(100)
+
+# carre(100)
+
 
 def triangle(c):
     for i in range(3):
         forward(c)
         right(120)
 
-#triangle(100)
+
+# triangle(100)
+
 
 def maison(c):
     carre(c)
@@ -34,10 +39,12 @@ def maison(c):
     left(30)
     backward(c)
 
-#maison(100)
+
+# maison(100)
 
 # Exercice 1 - 3)
-#****************
+# ****************
+
 
 def figure(c):
     for i in range(6):
@@ -47,10 +54,12 @@ def figure(c):
         forward(c)
         right(30)
 
-#figure(50)
+
+# figure(50)
 
 # Exercice 2 - 1)
-#****************
+# ****************
+
 
 def branche():
     taille = 100
@@ -60,43 +69,53 @@ def branche():
         taille = taille - 20
     backward(300)
 
-#branche()
+
+# branche()
+
 
 def figure2():
     for i in range(4):
         branche()
         right(90)
 
-#figure2()
+
+# figure2()
 
 # Exercice 3
-#***********
+# ***********
+
 
 def etoile(c):
-  for i in range(7):
-    forward(c)
-    right(180 - 180 / 7)
+    for i in range(7):
+        forward(c)
+        right(180 - 180 / 7)
 
-#etoile(100)
+
+# etoile(100)
 
 # Exercice 4
-#***********
+# ***********
+
 
 def heptagone(c):
     for i in range(7):
         forward(c)
         right(360 / 7)
 
-#heptagone(50)
+
+# heptagone(50)
+
 
 def polygone(n, c):
     for i in range(n):
         forward(c)
         right(360 / n)
 
-#polygone(30,10)
+
+# polygone(30,10)
 
 from math import *
+
 
 def cercle(r):
     c = 2 * r * cos(pi * (1 / 2 - 1 / 360))
@@ -104,21 +123,25 @@ def cercle(r):
     right(90)
     forward(2 * r)
 
-#cercle(100)
-#cercle(50)
+
+# cercle(100)
+# cercle(50)
 
 # Exercice 5
-#***********
+# ***********
+
 
 def rosace(n, c):
     for i in range(n):
         polygone(n, c)
         right(360 / n)
 
-#rosace(8,100)
+
+# rosace(8,100)
 
 # Exercice 6
-#***********
+# ***********
+
 
 def losange(c, a):
     for i in range(2):
@@ -126,7 +149,8 @@ def losange(c, a):
         right(a)
         forward(c)
         right(180 - a)
-    
+
+
 def tore(c):
     for i in range(12):
         a = 15
@@ -140,10 +164,12 @@ def tore(c):
             backward(c)
         left(15)
 
-#tore(25)
+
+# tore(25)
 
 # Triangle isocèle
-#*****************
+# *****************
+
 
 def triangle_isocele(a, c):
     d = c / (2 * cos(pi * a / 180))
@@ -153,10 +179,12 @@ def triangle_isocele(a, c):
     right(180 - a)
     forward(d)
 
-#triangle_isocele(30,100)
+
+# triangle_isocele(30,100)
 
 # Spirale carrée
-#***************
+# ***************
+
 
 def spirale_carre(n):
     if n == 0:
@@ -166,27 +194,31 @@ def spirale_carre(n):
         forward(10 + 5 * n)
         right(90)
 
-#spirale_carre(20)
+
+# spirale_carre(20)
 
 # Arbre fractale
-#***************
+# ***************
+
 
 def arbre(n):
-    if (n == 0):
+    if n == 0:
         pass
     else:
-        forward(5 * 2 ** n)
+        forward(5 * 2**n)
         right(45)
         arbre(n - 1)
         left(90)
         arbre(n - 1)
         right(45)
-        backward(5 * 2 ** n)
+        backward(5 * 2**n)
 
-#arbre(5)
+
+# arbre(5)
 
 # Triangle de Sierpinski
-#***********************
+# ***********************
+
 
 def triangle_noir(m):
     color("black")
@@ -199,10 +231,12 @@ def triangle_noir(m):
     left(120)
     end_fill()
 
-#triangle_noir(100)
+
+# triangle_noir(100)
+
 
 def sierpinski(n, m):
-    if (n == 0):
+    if n == 0:
         triangle_noir(m)
     else:
         sierpinski(n - 1, m / 2)
@@ -216,10 +250,8 @@ def sierpinski(n, m):
         backward(m / 2)
         right(60)
 
-#sierpinski(3,200)
+
+# sierpinski(3,200)
 
 # pour que la fenêtre reste ouverte après l'exécution
 exitonclick()
-
-
-

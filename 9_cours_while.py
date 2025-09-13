@@ -1,24 +1,28 @@
-#**********************************
+# **********************************
 # * NSI 1ère Lycée Buffon 2020-2021
 # * Estelle Doriot
 # *
 # * La boucle while
-#**********************************
+# **********************************
 
 # Exercice 1
-#***********
+# ***********
 print("\n** Exercice 1:")
+
 
 def truc(n):
     p = 1
-    while p < n :
+    while p < n:
         p = p * 2
     print(n)
+
+
 truc(100)
 
 # Exemple
-#********
+# ********
 print("\n** Exemple:")
+
 
 def horloge():
     n = 1
@@ -29,22 +33,26 @@ def horloge():
             print("tac")
         n += 1
 
-#horloge()
+
+# horloge()
 
 # Exercice 3:
-#************
+# ************
 print("\n** Exercice 3:")
+
 
 def exemple(m, n):
     a = m
     b = m + n
-    while a < b :
+    while a < b:
         a = a + 1
         b = b + 1
 
+
 # Exercice 4:
-#************
+# ************
 print("\n** Exercice 4:")
+
 
 # fonction truc avec une boucle while
 def truc2(n):
@@ -54,8 +62,10 @@ def truc2(n):
         x = 2 * x
         k = k + 1
     print(x)
-    
+
+
 truc2(5)
+
 
 # fonction truc2 avec une boucle for
 def truc3(n):
@@ -63,7 +73,8 @@ def truc3(n):
     for k in range(1, n):
         x = 2 * x
     print(x)
-    
+
+
 truc3(5)
 
 # Exercice: écrire un programme qui affiche tous les diviseurs d'un entier n en utilisant une boucle while

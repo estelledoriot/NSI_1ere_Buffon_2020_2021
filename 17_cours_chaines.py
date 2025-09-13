@@ -1,16 +1,16 @@
-#**********************************
+# **********************************
 # * NSI 1ère Lycée Buffon 2020-2021
 # * Estelle Doriot
 # *
 # * Chaînes de caractères
-#**********************************
+# **********************************
 
 m = 'il a dit: "bonjour"'
 b = "bonjour "
 a = "Marie"
 
 print(b[0])
-#b[0]="B" #erreur
+# b[0]="B" #erreur
 
 # parcours d'une chaîne de caractères
 for i in range(len(b)):
@@ -20,13 +20,15 @@ for i in range(len(b)):
 for lettre in b:
     print(lettre)
 
+
 # suppression des espaces
 def suppr_esp(m):
-    r = ''
+    r = ""
     for lettre in m:
         if lettre != " ":
             r = r + lettre
     return r
+
 
 print(suppr_esp("Veni Vidi Vici"))
 
@@ -34,7 +36,7 @@ print(suppr_esp("Veni Vidi Vici"))
 print(m)
 print(len(m))
 
-v = ''
+v = ""
 print(len(v))
 
 # concaténation
@@ -45,7 +47,7 @@ s = "a b" * 2 + "ba" + "b" * 3
 print(s)
 
 # Caractères d'échappement
-n = "il a dit: \"bonjour\""
+n = 'il a dit: "bonjour"'
 print(len(m))
 print(len(n))
 

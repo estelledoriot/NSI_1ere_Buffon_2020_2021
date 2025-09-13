@@ -1,46 +1,53 @@
-#**********************************
+# **********************************
 # * NSI 1ère Lycée Buffon 2020-2021
 # * Estelle Doriot
 # *
 # * TD Sudoku 4
-#**********************************
+# **********************************
 
 # sujet du TD Sudoku IV à compléter
 # remplacer tous les ... dans le code suivant
 
 # grilles
-C = [[7, 0, 8, 0, 1, 9, 5, 0, 0],
-     [0, 9, 3, 0, 7, 6, 8, 0, 0],
-     [0, 5, 0, 3, 0, 0, 0, 0, 9],
-     [0, 0, 0, 0, 4, 1, 0, 6, 7],
-     [0, 0, 0, 0, 0, 0, 0, 0, 0],
-     [9, 4, 0, 7, 6, 0, 0, 0, 0],
-     [2, 0, 0, 0, 0, 5, 0, 8, 0],
-     [0, 0, 9, 6, 3, 0, 4, 1, 0],
-     [0, 0, 6, 4, 2, 0, 9, 0, 5]]
+C = [
+    [7, 0, 8, 0, 1, 9, 5, 0, 0],
+    [0, 9, 3, 0, 7, 6, 8, 0, 0],
+    [0, 5, 0, 3, 0, 0, 0, 0, 9],
+    [0, 0, 0, 0, 4, 1, 0, 6, 7],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [9, 4, 0, 7, 6, 0, 0, 0, 0],
+    [2, 0, 0, 0, 0, 5, 0, 8, 0],
+    [0, 0, 9, 6, 3, 0, 4, 1, 0],
+    [0, 0, 6, 4, 2, 0, 9, 0, 5],
+]
 
-A = [[0, 4, 0, 7, 6, 5, 0, 2, 0],
-     [0, 0, 2, 9, 3, 0, 0, 0, 0],
-     [6, 0, 0, 0, 0, 8, 7, 4, 0],
-     [1, 5, 0, 8, 2, 0, 0, 0, 0],
-     [4, 2, 0, 0, 0, 0, 0, 7, 8],
-     [0, 0, 0, 0, 7, 1, 0, 6, 2],
-     [0, 6, 4, 1, 0, 0, 0, 0, 5],
-     [0, 0, 0, 0, 4, 3, 6, 0, 0],
-     [0, 3, 0, 6, 9, 2, 0, 1, 0]]
+A = [
+    [0, 4, 0, 7, 6, 5, 0, 2, 0],
+    [0, 0, 2, 9, 3, 0, 0, 0, 0],
+    [6, 0, 0, 0, 0, 8, 7, 4, 0],
+    [1, 5, 0, 8, 2, 0, 0, 0, 0],
+    [4, 2, 0, 0, 0, 0, 0, 7, 8],
+    [0, 0, 0, 0, 7, 1, 0, 6, 2],
+    [0, 6, 4, 1, 0, 0, 0, 0, 5],
+    [0, 0, 0, 0, 4, 3, 6, 0, 0],
+    [0, 3, 0, 6, 9, 2, 0, 1, 0],
+]
 
-B = [[0, 9, 0, 4, 0, 1, 3, 0, 0],
-     [2, 0, 4, 0, 9, 5, 0, 0, 0],
-     [1, 0, 0, 0, 0, 0, 0, 0, 5],
-     [0, 0, 0, 3, 0, 0, 0, 0, 2],
-     [7, 0, 0, 6, 1, 0, 0, 0, 0],
-     [6, 1, 3, 0, 0, 0, 4, 7, 0],
-     [0, 8, 0, 5, 3, 0, 2, 0, 1],
-     [5, 0, 9, 0, 2, 0, 0, 0, 0],
-     [3, 0, 0, 0, 0, 4, 6, 0, 0]]
+B = [
+    [0, 9, 0, 4, 0, 1, 3, 0, 0],
+    [2, 0, 4, 0, 9, 5, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0, 0, 0, 5],
+    [0, 0, 0, 3, 0, 0, 0, 0, 2],
+    [7, 0, 0, 6, 1, 0, 0, 0, 0],
+    [6, 1, 3, 0, 0, 0, 4, 7, 0],
+    [0, 8, 0, 5, 3, 0, 2, 0, 1],
+    [5, 0, 9, 0, 2, 0, 0, 0, 0],
+    [3, 0, 0, 0, 0, 4, 6, 0, 0],
+]
 
 # fonction afficher
-#******************
+# ******************
+
 
 def afficher(grille):
     for i in range(9):
@@ -48,15 +55,17 @@ def afficher(grille):
             print("-" * 25)
         for j in range(9):
             if j % 3 == 0:
-                print("|", end = " ")
-            print(grille[i][j], end = " ")
+                print("|", end=" ")
+            print(grille[i][j], end=" ")
         print("|")
     print("-" * 25)
+
 
 afficher(C)
 
 # fonction fini
-#**************
+# **************
+
 
 def fini(sudoku):
     for i in range(9):
@@ -65,10 +74,12 @@ def fini(sudoku):
                 return False
     return True
 
+
 print(fini(C))
 
 # Question 1:
-#************
+# ************
+
 
 def possibles(sudoku, i, j):
     # si la case est déjà remplie, il n'est pas possible de la remplir
@@ -81,7 +92,7 @@ def possibles(sudoku, i, j):
         # si un chiffre n'est present ni dans la ligne, ni dans la colonne, ni dans le carré
         # de la case (i,j), on l'ajoute a la liste des chiffres possibles
         liste = ...
-        for a in range(...): # on parcourt les entiers de 1 à 9
+        for a in range(...):  # on parcourt les entiers de 1 à 9
             # a est possible tant qu'il n'a pas été trouvé dans la ligne, la colonne ou le carré
             possible = True
             # on parcourt la ligne i
@@ -97,8 +108,12 @@ def possibles(sudoku, i, j):
             # on parcourt le carré contenant la case (i,j)
             i1 = ...
             j1 = ...
-            for k in range(i1, i1 + 3): # on parcourt les lignes du carre de la case i,j
-                for l in range(j1, j1 + 3): # on parcourt les colonnes du carre de la case i,j
+            for k in range(
+                i1, i1 + 3
+            ):  # on parcourt les lignes du carre de la case i,j
+                for l in range(
+                    j1, j1 + 3
+                ):  # on parcourt les colonnes du carre de la case i,j
                     # si a est dans le carre de i,j, il n'est pas possible pour la case i,j
                     if ...:
                         possible = False
@@ -108,24 +123,28 @@ def possibles(sudoku, i, j):
                 ...
         return liste
 
-print(possibles(C,0,1))
+
+print(possibles(C, 0, 1))
 
 # Question 2:
-#************
+# ************
+
 
 def remplir_cases(sudoku):
     # on remplace les 0 dans les cases où il n'y a qu'un seul chiffre possible
-    for i in range(9): # on parcourt les lignes
-        for j in range(9): # on parcourt les colonnes
+    for i in range(9):  # on parcourt les lignes
+        for j in range(9):  # on parcourt les colonnes
             # si la case est vide et qu'il n'y a qu'un seule chiffre possible
             if sudoku[i][j] == ... and len(possibles(...)) == ...:
                 sudoku[i][j] = ...
+
 
 remplir_cases(C)
 afficher(C)
 
 # Question 3:
-#************
+# ************
+
 
 def manquants_ligne(sudoku, i):
     # fonction manquants_ligne du td précédent
@@ -140,17 +159,18 @@ def manquants_ligne(sudoku, i):
             liste.append(a)
     return liste
 
+
 def remplir_lignes(sudoku):
     # place un chiffre dans une case si c'est la seule case vide de sa ligne
     # où le chiffre peut être placé
-    for i in range(9): # on parcourt les lignes du sudoku
-        manquants = ... # liste des chiffres manquants sur la ligne i
+    for i in range(9):  # on parcourt les lignes du sudoku
+        manquants = ...  # liste des chiffres manquants sur la ligne i
         # pour chaque chiffre a manquant sur la ligne i, on regarde dans quelle case (i,j)
         # il peut être placé
         for a in manquants:
-            possibilite = ... # nombre de cases possibles pour a
-            indice = ... # indice de la case possible
-            for j in range(9): # on parcourt les cases de la ligne i
+            possibilite = ...  # nombre de cases possibles pour a
+            indice = ...  # indice de la case possible
+            for j in range(9):  # on parcourt les cases de la ligne i
                 # on cherche si a fait partie des chiffres possibles à placer dans la case (i,j)
                 for e in possibles(sudoku, i, j):
                     if ...:
@@ -161,11 +181,13 @@ def remplir_lignes(sudoku):
             if possibilite == ...:
                 sudoku[...][...] = a
 
+
 remplir_lignes(C)
 afficher(C)
 
 # Question 4:
-#************
+# ************
+
 
 def manquants_colonne(sudoku, j):
     # fonction manquants_colonne du td précédent
@@ -180,17 +202,18 @@ def manquants_colonne(sudoku, j):
             liste.append(a)
     return liste
 
+
 def remplir_colonnes(sudoku):
     # place un chiffre dans une case si c'est la seule case vide de sa colonne
     # où le chiffre peut être placé
-    for j in range(9): # on parcourt les colonnes
-        manquants = ... # liste des chiffres manquants dans la colonne j
+    for j in range(9):  # on parcourt les colonnes
+        manquants = ...  # liste des chiffres manquants dans la colonne j
         # pour chaque chiffre a manquant sur la colonne j, on regarde dans quelle case (i,j)
         # il peut être placé
         for a in manquants:
-            possibilite = ... # nombre de cases possibles pour a
-            indice = ... # indice de la case possible
-            for i in range(9): # on parcourt les cases de la colonne j
+            possibilite = ...  # nombre de cases possibles pour a
+            indice = ...  # indice de la case possible
+            for i in range(9):  # on parcourt les cases de la colonne j
                 # on cherche si a fait partie des chiffres possibles à placer dans la case (i,j)
                 for e in possibles(sudoku, i, j):
                     if ...:
@@ -201,11 +224,13 @@ def remplir_colonnes(sudoku):
             if possibilite == ...:
                 sudoku[...][...] = a
 
+
 remplir_colonnes(C)
 afficher(C)
 
 # Question 5:
-#************
+# ************
+
 
 def manquants_carre(sudoku, i, j):
     # fonction manquants_carre du td précédent
@@ -223,6 +248,7 @@ def manquants_carre(sudoku, i, j):
             liste.append(a)
     return liste
 
+
 def remplir_carres(sudoku):
     # place un chiffre dans une case si c'est la seule case vide de son carré
     # où le chiffre peut être placé
@@ -232,19 +258,21 @@ def remplir_carres(sudoku):
     while i < 9:
         j = 0
         while j < 9:
-            manquants = manquants_carre(sudoku, i, j) # liste des chiffres manquants dans le carré
+            manquants = manquants_carre(
+                sudoku, i, j
+            )  # liste des chiffres manquants dans le carré
             # pour chaque chiffre a manquant dans le carré, on regarde
             # dans quelle case il peut être placé
             for a in manquants:
-                possibilite = ... # nombre de cases possibles pour a
-                indicei = ... # indice i de la case possible
-                indicej = ... # indice j de la case possible
+                possibilite = ...  # nombre de cases possibles pour a
+                indicei = ...  # indice i de la case possible
+                indicej = ...  # indice j de la case possible
                 # on parcourt les cases du carré
                 for k in range(3):
                     for l in range(3):
                         # on cherche si a fait partie des chiffres possibles
                         # à placer dans la case
-                        for e in possibles(sudoku, i+k, j+l):
+                        for e in possibles(sudoku, i + k, j + l):
                             if ...:
                                 indicei = i + k
                                 indicej = j + l
@@ -256,11 +284,13 @@ def remplir_carres(sudoku):
             j = j + 3
         i = i + 3
 
+
 remplir_carres(C)
 afficher(C)
 
+
 # Question 6
-#************
+# ************
 def resolution_simple(sudoku):
     # resolution simple d'un sudoku
     # modifier les fonction remplir_cases, remplir_lignes, remplir_colonnes et remplir_carres
